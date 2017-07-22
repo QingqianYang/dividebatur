@@ -100,7 +100,6 @@
             }
         },
         {
-            "path" : "qld/data",
             "name" : "QLD",
             "shortname" : "qld",
             "description" : "Queensland",
@@ -110,6 +109,28 @@
             "election_order_ties": [],
             "election_ties": [],
             "exclusion_ties" : [],
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv"
+            }
+        },
+        {
+            "path" : "qld/data",
+            "name" : "QLD excluding GRN #1",
+            "shortname" : "qld_recount",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["WATERS", "Larissa"]]
+            },
             "aec-data" : {
                 "format": "AusSenatePost2015",
                 "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
@@ -181,9 +202,9 @@
         },
         {
             "path" : "sa/data",
-            "name" : "SA recount without FFP #1 relaxed BTL",
-            "shortname" : "sa_minusffp1_relaxed",
-            "description" : "South Australia - recount without FFP #1 - relaxed BTL formality",
+            "name" : "SA recount excluding FFP #1",
+            "shortname" : "sa_recount",
+            "description" : "South Australia - recount excluding FFP #1 (DAY, John)",
             "vacancies" : 12,
             "house" : "Australian Senate",
             "state" : "SA",
@@ -193,74 +214,6 @@
             "remove": {
                 "method": "relaxed",
                 "candidates": [["DAY", "Bob"]]
-            },
-            "aec-data" : {
-                "format": "AusSenatePost2015",
-                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
-                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
-                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv"
-            }
-        },
-        {
-            "path" : "sa/data",
-            "name" : "SA recount without FFP #1 strict BTL",
-            "shortname" : "sa_minusffp1_strict",
-            "description" : "South Australia - recount without FFP #1 - strict BTL formality",
-            "vacancies" : 12,
-            "house" : "Australian Senate",
-            "state" : "SA",
-            "election_order_ties": [],
-            "election_ties": [],
-            "exclusion_ties" : [],
-            "remove": {
-                "method": "strict",
-                "candidates": [["DAY", "Bob"]]
-            },
-            "aec-data" : {
-                "format": "AusSenatePost2015",
-                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
-                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
-                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv"
-            }
-        },
-        {
-            "path" : "sa/data",
-            "name" : "SA recount without FFP #1 and no FFP ATL, relaxed BTL",
-            "shortname" : "sa_minusffp12_relaxed",
-            "description" : "South Australia - recount without FFP #1 and no FFP ATL - relaxed BTL formality",
-            "vacancies" : 12,
-            "house" : "Australian Senate",
-            "state" : "SA",
-            "election_order_ties": [],
-            "election_ties": [],
-            "exclusion_ties" : [],
-            "remove": {
-                "method": "relaxed",
-                "candidates": [["DAY", "Bob"], ["GICHUHI", "Lucy"]],
-                "atl_only": [false, true]
-            },
-            "aec-data" : {
-                "format": "AusSenatePost2015",
-                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
-                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
-                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv"
-            }
-        },
-        {
-            "path" : "sa/data",
-            "name" : "SA recount without FFP #1 and no FFP ATL, strict BTL",
-            "shortname" : "sa_minusffp12_strict",
-            "description" : "South Australia - recount without FFP #1 and no FFP ATL - strict BTL formality",
-            "vacancies" : 12,
-            "house" : "Australian Senate",
-            "state" : "SA",
-            "election_order_ties": [],
-            "election_ties": [],
-            "exclusion_ties" : [],
-            "remove": {
-                "method": "strict",
-                "candidates": [["DAY", "Bob"], ["GICHUHI", "Lucy"]],
-                "atl_only": [false, true]
             },
             "aec-data" : {
                 "format": "AusSenatePost2015",
@@ -502,9 +455,9 @@
         },
         {
             "path" : "wa/data",
-            "name" : "WA PHON #1 - strict BTL",
-            "shortname" : "wa_phon_1",
-            "description" : "Western Australia - recount without PHON #1 (CULLETON, Rodney) - relaxed BTL formality",
+            "name" : "WA excluding PHON #1 GRN #1",
+            "shortname" : "wa_recount",
+            "description" : "Western Australia - recount excluding PHON #1 (CULLETON, Rodney), GRN #1 (LUDLAM, Scott)",
             "vacancies" : 12,
             "house" : "Australian Senate",
             "state" : "WA",
@@ -513,29 +466,7 @@
             "exclusion_ties" : [],
             "remove": {
                 "method": "relaxed",
-                "candidates": [["CULLETON", "Rodney Norman"]]
-            },
-            "aec-data" : {
-                "format": "AusSenatePost2015",
-                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
-                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
-                "formal-preferences": "wa/data/aec-senate-formalpreferences-20499-WA.csv"
-            }
-        },
-        {
-            "path" : "wa/data",
-            "name" : "WA PHON #1 - strict BTL",
-            "shortname" : "wa_phon_2",
-            "description" : "Western Australia - recount without PHON #1 (CULLETON, Rodney) - strict BTL formality",
-            "vacancies" : 12,
-            "house" : "Australian Senate",
-            "state" : "WA",
-            "election_order_ties": [],
-            "election_ties": [],
-            "exclusion_ties" : [],
-            "remove": {
-                "method": "strict",
-                "candidates": [["CULLETON", "Rodney Norman"]]
+                "candidates": [["CULLETON", "Rodney Norman"], ["LUDLAM", "Scott"]]
             },
             "aec-data" : {
                 "format": "AusSenatePost2015",
