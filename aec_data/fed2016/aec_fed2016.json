@@ -38,6 +38,28 @@
         },
         {
             "path" : "nsw/data",
+            "name" : "NSW excluding NAT #1",
+            "shortname" : "nsw_recount",
+            "description" : "New South Wales - recount excluding NAT #1 (NASH, Fiona)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties": [[[29252, 29321], 29252]],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["NASH", "Fiona"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv"
+            }
+        },
+        {
+            "path" : "nsw/data",
             "name" : "NSW s282 (1)",
             "shortname" : "nsw_s282",
             "description" : "NSW - s282 - limited original form",
@@ -118,9 +140,9 @@
         },
         {
             "path" : "qld/data",
-            "name" : "QLD excluding GRN #1",
+            "name" : "QLD excluding GRN #1 PHON #2",
             "shortname" : "qld_recount",
-            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa)",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa) PHON #2 (ROBERTS, Malcolm)",
             "vacancies" : 12,
             "house" : "Australian Senate",
             "state" : "QLD",
@@ -129,7 +151,7 @@
             "exclusion_ties" : [],
             "remove": {
                 "method": "relaxed",
-                "candidates": [["WATERS", "Larissa"]]
+                "candidates": [["WATERS", "Larissa"], ["ROBERTS", "Malcolm"]]
             },
             "aec-data" : {
                 "format": "AusSenatePost2015",
