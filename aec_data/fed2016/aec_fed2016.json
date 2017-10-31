@@ -60,6 +60,28 @@
         },
         {
             "path" : "nsw/data",
+            "name" : "NSW excluding NAT #1 LIB #4",
+            "shortname" : "nsw_recount_hughes",
+            "description" : "New South Wales - recount excluding NAT #1 (NASH, Fiona) LIB #4 (HUGHES, Hollie)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "NSW",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties": [[[28217, 28337, 29600], 28217], [[28337, 29600], 28337]],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["NASH", "Fiona"], ["HUGHES", "Hollie"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "nsw/data/aec-senate-formalpreferences-20499-NSW.csv"
+            }
+        },
+        {
+            "path" : "nsw/data",
             "name" : "NSW s282 (1)",
             "shortname" : "nsw_s282",
             "description" : "NSW - s282 - limited original form",
