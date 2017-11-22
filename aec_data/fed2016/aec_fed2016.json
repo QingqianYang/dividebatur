@@ -206,6 +206,28 @@
         },
         {
             "path" : "qld/data",
+            "name" : "QLD excluding GRN #1 GRN #2 PHON #2",
+            "shortname" : "qld_recount_grn12_phon2",
+            "description" : "Queensland - recount excluding GRN #1 (WATERS, Larissa) GRN #2 (BARTLETT, Andrew) PHON #2 (ROBERTS, Malcolm) PHON #4 (SMITH, Judy)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "QLD",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["WATERS", "Larissa"], ["BARTLETT", "Andrew"], ["ROBERTS", "Malcolm"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "qld/data/aec-senate-formalpreferences-20499-QLD.csv"
+            }
+        },
+        {
+            "path" : "qld/data",
             "name" : "QLD s282 (1)",
             "shortname" : "qld_s282",
             "description" : "Queensland - s282 recount - limited original form",
