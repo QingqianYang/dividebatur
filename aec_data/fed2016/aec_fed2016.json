@@ -334,6 +334,28 @@
         },
         {
             "path" : "sa/data",
+            "name" : "SA recount excluding FFP #1 NXT #3 NXT #4",
+            "shortname" : "sa_recount_ffp_nxt3_nxt4",
+            "description" : "South Australia - recount excluding FFP #1 (DAY, John) NXT #3 (KAKOSCHKE-MOORE, Skye) NXT #4 (STORER, Tim)",
+            "vacancies" : 12,
+            "house" : "Australian Senate",
+            "state" : "SA",
+            "election_order_ties": [],
+            "election_ties": [],
+            "exclusion_ties" : [],
+            "remove": {
+                "method": "relaxed",
+                "candidates": [["DAY", "Bob"], ["KAKOSCHKE-MOORE", "Skye"], ["STORER", "Tim"]]
+            },
+            "aec-data" : {
+                "format": "AusSenatePost2015",
+                "senate-candidates": "common/SenateCandidatesDownload-20499.csv",
+                "all-candidates": "common/2016federalelection-all-candidates-nat-30-06-924.csv",
+                "formal-preferences": "sa/data/aec-senate-formalpreferences-20499-SA.csv"
+            }
+        },
+        {
+            "path" : "sa/data",
             "name" : "SA s282 (1)",
             "shortname" : "sa_s282",
             "description" : "South Australia - s282 recount - limited original form",
