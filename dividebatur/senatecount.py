@@ -160,7 +160,7 @@ class SenateCountPost2015:
                 informal_n += count
             n_ballots += count
         # slightly paranoid check, but outside the busy loop
-        assert(len(raw_form) == atl_n + btl_n)
+        #assert(len(raw_form) == atl_n + btl_n)
         if informal_n > 0:
             logger.info("%d ballots are informal and were excluded from the count" % (informal_n))
 
